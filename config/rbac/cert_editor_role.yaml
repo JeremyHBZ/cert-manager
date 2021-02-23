@@ -1,0 +1,24 @@
+# permissions for end users to edit certs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cert-editor-role
+rules:
+- apiGroups:
+  - test.redhat.com
+  resources:
+  - certs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - test.redhat.com
+  resources:
+  - certs/status
+  verbs:
+  - get

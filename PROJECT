@@ -1,0 +1,13 @@
+domain: redhat.com
+layout: go.kubebuilder.io/v3
+projectName: cert-manager
+repo: github.com/JeremyHBZ/cert-manager
+resources:
+- crdVersion: v1
+  group: test
+  kind: Cert
+  version: v1alpha1
+version: 3-alpha
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}

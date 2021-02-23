@@ -1,0 +1,7 @@
+apiVersion: test.redhat.com/v1alpha1
+kind: Cert
+metadata:
+  name: cert-sample
+spec:
+  # Add fields here
+  cn: my-test-cn-value
